@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreen"
+    tools:context=".ui.LoginActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/img_logo_login"
+           />
+
+        <!-- frontend brabuu -->
+
+        <EditText
+            android:layout_marginTop="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:id="@+id/edit_nome_cadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/input_border"
+            android:hint="@string/nome_usuario"
+            android:textColorHint="@color/colorBlack"
+            android:paddingStart="16dp"
+
+            />
+
+        <EditText
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:id="@+id/edit_sobre_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/input_border"
+            android:hint="@string/sobre_nome"
+            android:textColorHint="@color/colorBlack"
+            android:paddingStart="16dp"
+
+            />
+
+        <EditText
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:id="@+id/edit_email_cadastro"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/input_border"
+            android:hint="@string/email"
+            android:textColorHint="@color/colorBlack"
+            android:paddingStart="16dp"
+            />
+
+        <EditText
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:id="@+id/edit_senha_cadastro"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:background="@drawable/input_border"
+            android:hint="@string/senha"
+            android:textColorHint="@color/colorBlack"
+            android:paddingStart="16dp"
+            />
+
+        <TextView
+            android:id="@+id/textview_faca_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/nunito_extrabold"
+            android:text="@string/ja_e_novo"
+            android:textColor="@color/colorBlue"/>
+
+
+
+        <Button
+            android:layout_marginTop="16dp"
+            android:id="@+id/btn_criar_conta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/button_black"
+            android:hint="@string/criar_conta"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

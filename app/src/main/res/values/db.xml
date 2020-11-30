@@ -1,0 +1,9 @@
+<resources>
+    <string name="db_name">sample-db</string>
+    <integer name="db_version">2</integer>
+    <string-array name="db_scan">
+        <item>com.coe.bean.Curso</item>
+        <item>com.coe.bean.Usuario</item>
+    </string-array>
+    <string name="db_log">true</string>
+</resources>
