@@ -1,9 +1,13 @@
 <resources>
     <string name="db_name">sample-db</string>
-    <integer name="db_version">2</integer>
+    <integer name="db_version">34</integer>
     <string-array name="db_scan">
         <item>com.coe.bean.Curso</item>
         <item>com.coe.bean.Usuario</item>
+        <item>com.coe.bean.Conquista</item>
+        <item>com.coe.bean.ListaAula</item>
+        <item>com.coe.bean.Matricula</item>
+        <item>com.coe.bean.Aula</item>
     </string-array>
     <string name="db_log">true</string>
 </resources>

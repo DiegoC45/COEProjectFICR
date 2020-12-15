@@ -21,4 +21,8 @@ public class CursoBo extends AbstractService<Curso> {
     protected IOperations<Curso> getDao() {
         return cursoDao;
     }
+
+    public Curso autenticado(){
+        return cursoDao.get(null, null);
+    }
 }

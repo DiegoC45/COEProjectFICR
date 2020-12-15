@@ -8,6 +8,20 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_main">
 
+<!--    <androidx.appcompat.widget.SearchView-->
+<!--        android:id="@+id/search_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="4dp"-->
+<!--        android:layout_margin="8dp"-->
+<!--        android:iconifiedByDefault="false"-->
+<!--        android:queryHint="Search"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:background="@drawable/bg_searchview"-->
+<!--        android:queryBackground="@android:color/transparent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/nav_host_fragment"/>-->
+
 
     <fragment
         android:id="@+id/nav_host_fragment"

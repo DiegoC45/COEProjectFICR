@@ -10,6 +10,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.coe.R;
+import com.coe.bo.UsuarioBo;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -31,7 +32,13 @@ public class SplashActivity extends AppCompatActivity {
         Handler handler = new Handler();
         handler.postDelayed(() -> {
 
-            startActivity(new Intent(this, TelaInicialActivity.class));
+            if(new UsuarioBo(SplashActivity.this).autenticado() != null){
+                startActivity(new Intent(this, HomeActivity.class));
+            }else{
+                startActivity(new Intent(this, TelaInicialActivity.class));
+            }
+
+
 
         }, 1500);
     }

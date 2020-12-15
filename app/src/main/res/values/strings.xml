@@ -21,4 +21,13 @@
     <string name="sobre_nome">Sobre nome</string>
     <string name="email_ja_cadastrado">Email já cadastrado no sistema.</string>
     <string name="usuario_registrado">Usuário registrado com sucesso.</string>
+    <string name="buscar">Buscar</string>
+    <string name="digite_nome_curso">Digite o nome do curso</string>
+    <string name="descricao">Descrição</string>
+    <string name="a_fazer">Curso em andamento:</string>
+    <string name="salvar">Salvar</string>
+    <string name="matricule_se">Matricule-se</string>
+    <string name="teste_url"><![CDATA[epDCjksKMok&feature=youtu.be&list=PLHz_AreHm4dlAnJ_jJtV29RFxnPHDuk9o&ab_channel=CursoemVídeo]]></string>
+    <string name="voltar">Voltar</string>
+    <string name="nao_foi_possivel_efetuar_matricula">Não foi possivel efetuar a matricula, tente mais tarde!</string>
 </resources>

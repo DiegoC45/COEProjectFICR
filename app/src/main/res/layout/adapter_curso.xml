@@ -20,7 +20,8 @@
             android:id="@+id/image_curso"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorBlack" />
+            android:scaleType="centerCrop"
+            android:background="@color/colorWhite" />
 
     </androidx.cardview.widget.CardView>
 

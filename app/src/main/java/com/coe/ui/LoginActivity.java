@@ -1,7 +1,5 @@
 package com.coe.ui;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,16 +10,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.coe.R;
 import com.coe.bean.Usuario;
 import com.coe.bo.UsuarioBo;
-import com.coe.ui.fragment.HomeFragment;
-import com.google.android.material.textfield.TextInputLayout;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.net.MalformedURLException;
 import java.net.URL;
 
 import mobi.stos.httplib.HttpAsync;
@@ -29,8 +25,11 @@ import mobi.stos.httplib.inter.FutureCallback;
 
 public class LoginActivity extends AppCompatActivity {
 
+
+    private final static int IMAGE = 1;
+
     private EditText mEditLogin, mEditSenha;
-    private TextView mBtnCadastrar;
+    private TextView mBtnCadastrar, mEsqueceuSenha;
     private Button mbtnLogar;
     private String login, senha;
 
@@ -43,8 +42,41 @@ public class LoginActivity extends AppCompatActivity {
         buttonLogar();
         buttonCadastrar();
 
+        String a = "111111";
+        for (char b:a.toCharArray()) {
+            System.out.println("b :" + b);
+            if(a.charAt(0)!=b) {
+                System.out.println("Diferente");
+            }else{
+                System.out.println("Não diferente");
+            }
+        }
+
+        mEsqueceuSenha.setOnClickListener(v -> {
+//            startActivity(new Intent(this, CursoVideoYoutubeActivity.class));
+//            startActivity(new Intent(this, ListaAulaCursoActivity.class));
+//            Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+//            intent.setType("image/*");
+//            startActivityForResult(intent, IMAGE);
+            Toast.makeText(this, "Em desenvolvimento", Toast.LENGTH_LONG).show();
+
+        });
 
     }
+
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//        Log.e("resquest", "onActivityResult: " + requestCode );
+//        if(requestCode == IMAGE){
+//            Log.e("result", "onActivityResult: " + resultCode );
+//            if(resultCode == RESULT_OK){
+//                Log.e("DATA", "onActivityResult: " + data.getData().toString() );
+//
+//                URI imagemSelecionada = data.getData()
+//            }
+//        }
+//    }
 
     private void buttonLogar() {
         mbtnLogar.setOnClickListener(v -> {
@@ -69,6 +101,7 @@ public class LoginActivity extends AppCompatActivity {
         mEditLogin = findViewById(R.id.edit_login);
         mEditSenha = findViewById(R.id.edit_senha);
         mbtnLogar = findViewById(R.id.btnLogar);
+        mEsqueceuSenha = findViewById(R.id.esqueceu_senha);
         mBtnCadastrar = findViewById(R.id.button_cadasttrar_se);
 
     }
@@ -80,6 +113,8 @@ public class LoginActivity extends AppCompatActivity {
             HttpAsync httpAsync = new HttpAsync(new URL(getString(R.string.url_base) + "login"));
             httpAsync.addParam("email", login);
             httpAsync.addParam("senha", senha);
+//            httpAsync.addParam("email", "alex@gmail.com");
+//            httpAsync.addParam("senha", "123");
             httpAsync.setDebug(true);
             httpAsync.post(new FutureCallback() {
                 @Override

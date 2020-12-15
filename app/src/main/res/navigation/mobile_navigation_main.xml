@@ -8,18 +8,18 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.coe.ui.fragment.HomeFragment"
-        android:label="home"
+        android:label="Home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_trofeu"
         android:name="com.coe.ui.fragment.PremioFragment"
-        android:label="login"
+        android:label="Conquista"
         tools:layout="@layout/fragment_premio" />
     <fragment
         android:id="@+id/nav_user_fragment"
         android:name="com.coe.ui.fragment.UserFragment"
-        android:label="fragment_user"
+        android:label="Perfil"
         tools:layout="@layout/fragment_user" />
 
 

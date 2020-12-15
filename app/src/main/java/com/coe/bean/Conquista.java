@@ -7,7 +7,7 @@ import mobi.stos.podataka_lib.annotations.Entity;
 import mobi.stos.podataka_lib.annotations.PrimaryKey;
 
 @Entity
-public class Curso implements Serializable {
+public class Conquista implements Serializable {
 
     @PrimaryKey(autoIncrement = false)
     private String id;
@@ -16,16 +16,10 @@ public class Curso implements Serializable {
     private String nome;
 
     @Column
-    private String descricao;
-
-    @Column
-    private String badge;
-
-    @Column
-    private String categoria;
-
-    @Column
     private String imgUrl;
+
+    @Column
+    private int drawable;
 
 
     public String getId() {
@@ -44,28 +38,12 @@ public class Curso implements Serializable {
         this.nome = nome;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public int getDrawable() {
+        return drawable;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public String getBadge() {
-        return badge;
-    }
-
-    public void setBadge(String badge) {
-        this.badge = badge;
-    }
-
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    public void setDrawable(int drawable) {
+        this.drawable = drawable;
     }
 
     public String getImgUrl() {
